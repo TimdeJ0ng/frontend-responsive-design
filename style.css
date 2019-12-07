@@ -11,15 +11,15 @@ h1{
 }
 
 h2{
-    font-size: 1em;
+    font-size: 1.7em;
 }
 
 h3{
-    font-size: 0.7em;
+    font-size: 1.5em;
 }
 
 h4{
-    font-size: 0.5em;
+    font-size: 1.3em;
 }
 
 a{
@@ -109,9 +109,14 @@ main{
      max-width: 80%;
      margin: 0 auto;
      margin-top: 3.5rem;
+     text-align: center;
+ }
+ article > header{
+     height:16rem;
+     
  }
 
-article > header{
-    max-width: 80%;
-    background-color: black;
+article > header > img{
+    width: 100%;
+   
 }
