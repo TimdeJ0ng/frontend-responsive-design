@@ -8,6 +8,7 @@ body{
 h1{
     font-size: 2em;
     font-weight: 500;
+
 }
 
 h2{
@@ -87,7 +88,15 @@ section{
     padding-top: 9%;
     padding-bottom: 9%;
     text-align: center;
+    position: relative;
+    background-image: url(https://www.ret.nl/fileadmin/user_upload/afbeeldingen/Header_images/Webwinkel_vrouw_1920x642.jpg);
+    background-blend-mode: luminosity;
+    background-position: center;
+    background-size: cover;
 }
+
+
+
 
 section > button{
     width: 10em;
@@ -108,10 +117,26 @@ section > button:hover{
 form{
     background-color: #EBEBEC;
     width: 100%;
-    height: 15em;
+    height: 20.3em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
-form > select/* stuk code gepakt van https://www.filamentgroup.com/lab/select-css.html*/ {   
-    display: flex; 
+
+form > div {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+}
+
+
+
+
+
+form > div > select/* stuk code gepakt van https://www.filamentgroup.com/lab/select-css.html*/ {   
+    flex-basis: 100%;
     font-size: 1em; 
     font-family: sans-serif; 
     color: #444; 
@@ -130,6 +155,40 @@ form > select/* stuk code gepakt van https://www.filamentgroup.com/lab/select-cs
     background-size: .65em auto, 100%; 
 }
 
+form > div > fieldset{
+    border:none;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;  
+} 
+
+
+
+
+form  > button{
+    width: 7em;
+    height: 2em;
+    background-color: #ED1A2D;
+    border:none;
+    color: white;
+    font-size: 1em;
+    border-radius: 0.2em;
+    cursor:pointer;
+    align-self: flex-end;
+    margin-right: 2em;
+}
+
+input{
+    margin-right: 1em;
+}
+
+
+legend{
+    font-size: 1.1em;
+    margin: 1em 0 1em 2em;
+    color: #444444;
+}
 main{
     background-color: #F4F4F5;   
 }
@@ -203,9 +262,95 @@ article > footer > a > svg{
 }
 
 .st2:hover{
-    fill:red;
+    fill: #ED1A2D;
+}
+
+.filter-button{
+display:none;
 }
 
 
 
+
+
+
+@media (min-width:40em) {
+
+
+
+}
+
+@media (min-width:55em) {
+    .filter-button{
+        display:flex;
+        }
+        
+    body > div.filter-window {
+        transition: 1s ease;
+    }
+
+    .active {
+        margin-left: -27.5em;
+    }
+    body > div{
+        position: fixed;
+        left: 0;
+        top: 30%;
+        width: 60vw;
+        max-width: 30em;
+        box-shadow: 3px 3px 14px rgba(0,0,0,0.5);
+        background-color: #eee;
+        display:flex;
+        height:6em;
+        justify-content: flex-end;
+
+    }
+
+    body > div > button {
+        display: unset;
+        cursor: pointer;
+        background-color:  #ED1A2D;
+        border:none;
+        height: 100%;
+    }
+    body > div > button:hover{
+        background-color:  #CC1929;
+    }
+
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 3em;
+        grid-gap: 3em;
+    }
+
+
+    main > article{
+        width: auto;
+        margin: 0;
+    }
+
+    
+}
+
+
+@media (min-width:80em) {
+
+    form{
+        max-width: 30em;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 3em;
+        grid-gap: 3em;
+    }
+      main > article:first-child{
+          grid-column: 1/3;
+      }   
+        
+    
+        
+}
 

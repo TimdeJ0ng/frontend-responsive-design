@@ -1,7 +1,8 @@
-var zoekKnop = document.querySelector('#search');
+var button = document.querySelector(".filter-button");
+var filter = document.querySelector(".filter-window");
 
-//var zoekVeld = document.querySelector('aside > form');
+function gaan() {
+    filter.classList.toggle('active');
+}
 
-zoekKnop.addEventListener('click', function(){
-  zoekKnop.classList.toggle('show-zoek');
-});
+button.addEventListener('click', gaan);

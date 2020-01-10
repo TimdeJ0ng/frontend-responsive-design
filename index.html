@@ -7,117 +7,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header>
-  <a href=""><img src="../frontend-responsive-design/images/ret-logo.svg"></a>
-</header>
-<nav>
-    <ul>
+
+    <header>
+    <a href=""><img src="../frontend-responsive-design/images/ret-logo.svg"></a>
+    </header>
+    
+    <nav>
+        <ul>
+                <a href="#"> <li>
+                Home
+            </li></a>
+            <a href="#"><li>
+                Reisplanner
+            </li></a> 
             <a href="#"> <li>
-            Home
-        </li></a>
-        <a href="#"><li>
-             Reisplanner
-        </li></a> 
-        <a href="#"> <li>
-             Verhalen
-        </li></a>
-        <a href="#"> <li>
-            Contact
-        </li></a> 
-    </ul>
-</nav>
+                Verhalen
+            </li></a>
+            <a href="#"> <li>
+                Contact
+            </li></a> 
+        </ul>
+    </nav>
 
-<section>
-    <h1>Verhalen voor Onderweg</h1>
-    <button type="button">Verras mij</button>
-</section>
+    <section>
+        
+        <h1>Verhalen voor Onderweg</h1>
+        <button type="button">Verras mij</button>
+    </section>
 
-<form>
+<div class="filter-window active">
+    <form>
+        <div id="filterlabel"></div>
     <legend>Sorteer</legend>
-    <select>
-        <option value="volvo">Best gelezen</option>
-        <option value="saab">Minst gelezen</option>
-        <option value="opel">Titel A-Z</option>
-        <option value="audi">Titel Z-A</option>
-      </select>
-      <legend>Filter</legend>
-      
-</form>
+    <div>
+        
+        <select>
+            <option value="volvo">Best gelezen</option>
+            <option value="saab">Minst gelezen</option>
+            <option value="opel">Titel A-Z</option>
+            <option value="audi">Titel Z-A</option>
+        </select>
+    </div>
+    <legend>Filter</legend>
+    <div>
+            
+            <fieldset>
+            <label for="TV/Film">  <input name="TV/Film" id="TV/Film" type="checkbox">TV/Film</input></label>
+            <label for="Humor"> <input name="Humor" id="Humor" type="checkbox">Humor</input></label>
+            <label for="Emotie"> <input name="Emotie" id="Emotie" type="checkbox">Emotie</input></label>
+            <label for="Maatschappij"> <input name="Maatschappij" id="Maatschappij" type="checkbox">Maatschappij</input> </label>
+            </fieldset>
+            <fieldset>
+                <label for="Politiek">  <input name="Politiek" id="Politiek" type="checkbox">Politiek</input></label>
+                <label for="Religie"> <input name="Religie" id="Religie" type="checkbox">Religie</input></label>
+                <label for="Literatuur"> <input name="Literatuur" id="Literatuur" type="checkbox">Literatuur</input></label>
+                <label for="Thriller"> <input name="Thriller" id="Thriller" type="checkbox">Thriller</input> </label>
+            </fieldset>    
+    </div>
+        <button type="button">zoeken</button>
+    </form>
+    <button type="button" class="filter-button"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="2em" height="2em" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986; fill:white;" xml:space="preserve">
+        <g>
+            <path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"/>
+        </g>
+        </svg>
+    </button>
+</div>
 
-<main>
-    <article>
-        <header>
-            <img src="../frontend-responsive-design/images/vrijdag de 13e.png" alt="verhaalimg">       
-        </header>
-        <h3>
-             Vrijdag de 13e
-        </h3>
-        <h4>
-            Triest
-        </h4>
-        <p>
-            Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit.
-        </p>
-        <a href="">
-            Bekijken 
-        </a>
-        <footer>
-               <a href="#" ><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
-<style type="text/css">
-	
-</style>
-<path class="st1" d="M12,0C9.46,3.25,6.93,6.49,4.39,9.74h5.43V16h4.35V9.74h5.43C17.07,6.49,14.54,3.25,12,0z"/>
-</svg></a>
+
+
+
+    <main>
+        <article>
+            <header>
+                <img src="../frontend-responsive-design/images/vrijdag de 13e.png" alt="verhaalimg">       
+            </header>
+            <h3>
+                Vrijdag de 13e
+            </h3>
+            <h4>
+                Triest
+            </h4>
+            <p>
+                Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit.
+            </p>
+            <a href="">
+                Bekijken 
+            </a>
+            <footer>
+                <a href="#" ><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+    <style type="text/css">
+        
+    </style>
+    <path class="st1" d="M12,0C9.46,3.25,6.93,6.49,4.39,9.74h5.43V16h4.35V9.74h5.43C17.07,6.49,14.54,3.25,12,0z"/>
+    </svg></a>
+                    <p>100</p>
+            <a href="#"><svg version="1.1" id="Laag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+                <style type="text/css">
+                    
+                </style>
+                <path class="st2" d="M12,16c2.54-3.25,5.07-6.49,7.61-9.74h-5.43V0H9.83v6.26H4.39C6.93,9.51,9.46,12.75,12,16z"/>
+                </svg></a>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <img src="../frontend-responsive-design/images/paranoia.png" alt="verhaalimg">       
+            </header>
+            <h3>
+                Vrijdag de 13e
+            </h3>
+            <h4>
+                Triest
+            </h4>
+            <p>
+                Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit.
+            </p>
+            <a href="">
+                Bekijken 
+            </a>
+            <footer>
+                <a href="#" ><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+    <style type="text/css">
+    
+    </style>
+    <path class="st1" d="M12,0C9.46,3.25,6.93,6.49,4.39,9.74h5.43V16h4.35V9.74h5.43C17.07,6.49,14.54,3.25,12,0z"/>
+    </svg></a>
                 <p>100</p>
         <a href="#"><svg version="1.1" id="Laag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
-               <style type="text/css">
-                   
-               </style>
-               <path class="st2" d="M12,16c2.54-3.25,5.07-6.49,7.61-9.74h-5.43V0H9.83v6.26H4.39C6.93,9.51,9.46,12.75,12,16z"/>
-               </svg></a>
+                <style type="text/css">
+                    
+                </style>
+                <path class="st2" d="M12,16c2.54-3.25,5.07-6.49,7.61-9.74h-5.43V0H9.83v6.26H4.39C6.93,9.51,9.46,12.75,12,16z"/>
+                </svg></a>
         </footer>
-    </article>
-    <article>
-        <header>
-            <img src="../frontend-responsive-design/images/paranoia.png" alt="verhaalimg">       
-        </header>
-        <h3>
-             Vrijdag de 13e
-        </h3>
-        <h4>
-            Triest
-        </h4>
-        <p>
-            Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit.
-        </p>
-        <a href="">
-            Bekijken 
-        </a>
-        <footer>
-            <a href="#" ><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
-<style type="text/css">
- 
-</style>
-<path class="st1" d="M12,0C9.46,3.25,6.93,6.49,4.39,9.74h5.43V16h4.35V9.74h5.43C17.07,6.49,14.54,3.25,12,0z"/>
-</svg></a>
-             <p>100</p>
-     <a href="#"><svg version="1.1" id="Laag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+        </article>
+        <article>
+                <header>
+                    <img src="../frontend-responsive-design/images/vrijdag de 13e.png" alt="verhaalimg">       
+                </header>
+                <h3>
+                    Vrijdag de 13e
+                </h3>
+                <h4>
+                    Triest
+                </h4>
+                <p>
+                    Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit.
+                </p>
+                <a href="">
+                    Bekijken 
+                </a>
+                <footer>
+                    <a href="#" ><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+        <style type="text/css">
+            
+        </style>
+        <path class="st1" d="M12,0C9.46,3.25,6.93,6.49,4.39,9.74h5.43V16h4.35V9.74h5.43C17.07,6.49,14.54,3.25,12,0z"/>
+        </svg></a>
+                        <p>100</p>
+                <a href="#"><svg version="1.1" id="Laag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+                    <style type="text/css">
+                        
+                    </style>
+                    <path class="st2" d="M12,16c2.54-3.25,5.07-6.49,7.61-9.74h-5.43V0H9.83v6.26H4.39C6.93,9.51,9.46,12.75,12,16z"/>
+                    </svg></a>
+                </footer>
+        </article>
+        <article>
+                <header>
+                    <img src="../frontend-responsive-design/images/paranoia.png" alt="verhaalimg">       
+                </header>
+                <h3>
+                    Vrijdag de 13e
+                </h3>
+                <h4>
+                    Triest
+                </h4>
+                <p>
+                    Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit.
+                </p>
+                <a href="">
+                    Bekijken 
+                </a>
+                <footer>
+                    <a href="#" ><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+        <style type="text/css">
+        
+        </style>
+        <path class="st1" d="M12,0C9.46,3.25,6.93,6.49,4.39,9.74h5.43V16h4.35V9.74h5.43C17.07,6.49,14.54,3.25,12,0z"/>
+        </svg></a>
+                    <p>100</p>
+            <a href="#"><svg version="1.1" id="Laag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+                    <style type="text/css">
+                        
+                    </style>
+                    <path class="st2" d="M12,16c2.54-3.25,5.07-6.49,7.61-9.74h-5.43V0H9.83v6.26H4.39C6.93,9.51,9.46,12.75,12,16z"/>
+                    </svg></a>
+            </footer>
+        </article>   
+        <article>
+                    <header>
+                        <img src="../frontend-responsive-design/images/vrijdag de 13e.png" alt="verhaalimg">       
+                    </header>
+                    <h3>
+                        Vrijdag de 13e
+                    </h3>
+                    <h4>
+                        Triest
+                    </h4>
+                    <p>
+                        Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit.
+                    </p>
+                    <a href="">
+                        Bekijken 
+                    </a>
+                    <footer>
+                        <a href="#" ><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
             <style type="text/css">
                 
             </style>
-            <path class="st2" d="M12,16c2.54-3.25,5.07-6.49,7.61-9.74h-5.43V0H9.83v6.26H4.39C6.93,9.51,9.46,12.75,12,16z"/>
+            <path class="st1" d="M12,0C9.46,3.25,6.93,6.49,4.39,9.74h5.43V16h4.35V9.74h5.43C17.07,6.49,14.54,3.25,12,0z"/>
             </svg></a>
-     </footer>
-    </article>
-</main>
+                            <p>100</p>
+                    <a href="#"><svg version="1.1" id="Laag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+                        <style type="text/css">
+                            
+                        </style>
+                        <path class="st2" d="M12,16c2.54-3.25,5.07-6.49,7.61-9.74h-5.43V0H9.83v6.26H4.39C6.93,9.51,9.46,12.75,12,16z"/>
+                        </svg></a>
+                    </footer>
+        </article>
+        <article>
+                    <header>
+                        <img src="../frontend-responsive-design/images/paranoia.png" alt="verhaalimg">       
+                    </header>
+                    <h3>
+                        Vrijdag de 13e
+                    </h3>
+                    <h4>
+                        Triest
+                    </h4>
+                    <p>
+                        Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit.
+                    </p>
+                    <a href="">
+                        Bekijken 
+                    </a>
+                    <footer>
+                        <a href="#" ><svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+            <style type="text/css">
+            
+            </style>
+            <path class="st1" d="M12,0C9.46,3.25,6.93,6.49,4.39,9.74h5.43V16h4.35V9.74h5.43C17.07,6.49,14.54,3.25,12,0z"/>
+            </svg></a>
+                        <p>100</p>
+                <a href="#"><svg version="1.1" id="Laag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+                        <style type="text/css">
+                            
+                        </style>
+                        <path class="st2" d="M12,16c2.54-3.25,5.07-6.49,7.61-9.74h-5.43V0H9.83v6.26H4.39C6.93,9.51,9.46,12.75,12,16z"/>
+                        </svg></a>
+                </footer>
+        </article>
+    </main>
 
-<section id="favorites"></section>
-
-<footer></footer>
-<script src="java.js"></script>
+    <footer></footer>
+    <script src="java.js"></script>
 </body>
 </html>
