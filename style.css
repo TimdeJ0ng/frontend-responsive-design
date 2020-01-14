@@ -426,11 +426,17 @@ section.verhaal img{
     .menu-header nav ul li {
         background-color: #F5F5F6;
     }
+    .menu-header nav ul li:hover {
+        background-color: darkgrey;
+    }
+    .menu-header nav ul li:active {
+        background-color: darkgrey;
+    }
 
     .menu-header header{
         flex: 2 1 auto;
     }
-    
+   
         
 }
 
