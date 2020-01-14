@@ -387,7 +387,9 @@ section.verhaal img{
 
 
 @media (min-width:80em) {
-
+    main{
+        background-color: white;
+    }
     form{
         max-width: 30em;
     }
