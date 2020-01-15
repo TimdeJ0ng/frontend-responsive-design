@@ -1,7 +1,7 @@
 # frontend-responsive-design
 Opdracht voor het vak Frontend @CMD Amsterdam
 
-[Beschrijf hier wat jij gaat doen]
+Ik heb het ontwerp van mijn verhalen website gebruikt als stramien voor deze website. Ik heb iets andere microinteracties bedacht dat toen, maar desalnietemin ben ik blij met het resultaat. Ik heb flexbox en grid gebruikt om de website schaalbaar te maken. Verder heb ik iteractie toegevoegd aan het filter menu. Deze is te gebruiken na het schalen van de website. De filter button is gelinked naar een andere verhalen pagina om het filteren te simuleren. 
 
 ## Criteria
 ### 1.) De HTML is gestructureerd en semantisch opgemaakt
